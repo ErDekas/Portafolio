@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Definir el juego de caracteres para el documento -->
     <meta charset="UTF-8" />
+    <!-- Configurar la vista para que sea adecuada en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlace a la hoja de estilo de Remix Icons para iconos personalizados -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
     />
+    <!-- Enlace a la hoja de estilos personalizada -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Título de la página -->
     <title>Portafolio de Pablo Linares</title>
   </head>
 
   <body>
+    <!-- Barra de navegación principal -->
     <nav class="navbar">
+      <!-- Logo y nombre del portafolio -->
       <a href="#" class="navbar__logo"
         ><i class="ri-code-s-slash-line"></i> Pablo Linares</a
       >
 
       <div class="navbar__menu">
+        <!-- Enlaces de navegación a diferentes secciones del sitio -->
         <a href="#hero" class="navbar__link">Home</a>
         <a href="#showcase" class="navbar__link">Projects</a>
         <a href="#skills" class="navbar__link">Skills</a>
@@ -25,37 +33,53 @@
       </div>
 
       <div class="navbar__actions">
+        <!-- Ubicación geográfica -->
         <div class="navbar__location">
           <h5>Granada, España</h5>
         </div>
+        <!-- Botón para contactar -->
         <a href="#contact"><button class="btn">Get a Quote</button></a>
       </div>
     </nav>
 
+    <!-- Sección hero, normalmente la primera sección visible de un portafolio -->
     <section class="hero" id="hero">
       <div class="hero__content">
+        <!-- Imagen del perfil -->
         <img src="assets/profile.png" alt="Profile Image" class="hero__image" />
         <h2>Pablo Linares</h2>
       </div>
       <div class="hero__intro">
-        <h3>Desarrollador FullStack basado en el MERN Stack en Granada, España</h3>
+        <!-- Descripción de la profesión y área de especialización -->
+        <h3>
+          Desarrollador FullStack basado en el MERN Stack en Granada, España
+        </h3>
         <p>
           Desarrollo aplicaciones web intuitivas y de alto rendimiento para
           soluciones digitales.
         </p>
         <div class="hero__actions">
+          <!-- Botones de llamada a la acción -->
           <a href="#contact"><button class="btn">Trabaja Conmigo</button></a>
-          <a href="#showcase"><button class="btn btn--secondary">Ver mis proyectos</button></a>
+          <a href="#showcase"
+            ><button class="btn btn--secondary">Ver mis proyectos</button></a
+          >
         </div>
       </div>
 
+      <!-- Redes sociales -->
       <div class="hero__socials">
-        <a href="https://www.instagram.com/tudekas"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.instagram.com/tudekas"
+          ><i class="ri-instagram-line"></i
+        ></a>
         <a href="https://github.com/ErDekas"><i class="ri-github-line"></i></a>
-        <a href="https://www.linkedin.com/in/pablo-linares-9696602b4"><i class="ri-linkedin-line"></i></a>
+        <a href="https://www.linkedin.com/in/pablo-linares-9696602b4"
+          ><i class="ri-linkedin-line"></i
+        ></a>
       </div>
     </section>
 
+    <!-- Sección de habilidades -->
     <section class="skills" id="skills">
       <div class="skills__desc">
         <h3>Experiencia en Múltiples Proyectos y Tecnologías</h3>
@@ -64,11 +88,11 @@
           aplicaciones web responsivas.
         </p>
 
-        <div class="skills__actions">
-        </div>
+        <div class="skills__actions"></div>
       </div>
 
       <div class="skills__stats">
+        <!-- Iconos representando tecnologías y herramientas que usas -->
         <i class="ri-javascript-line"></i>
         <i class="ri-html5-line"></i>
         <i class="ri-css3-line"></i>
@@ -80,269 +104,355 @@
       </div>
     </section>
 
+    <!-- Sección de proyectos -->
     <div class="showcase_categories">
       <section class="showcase" id="showcase">
         <div class="showcase__header">
           <h3>Proyectos</h3>
         </div>
         <div class="projects">
-        <a class="code-source" href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Intermedio/05-Tablero%20de%20Ajedrez%20Interactivo" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/Ajedrez.png"
-                alt="Ajedrez"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Ajedrez</h5>
-                <p>Juego clásico de ajedrez con funcionalidad interactiva.</p>
+          <!-- Cada enlace es un proyecto individual con su imagen, descripción y botón para verlo -->
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Intermedio/05-Tablero%20de%20Ajedrez%20Interactivo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/Ajedrez.png"
+                    alt="Ajedrez"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Ajedrez</h5>
+                    <p>
+                      Juego clásico de ajedrez con funcionalidad interactiva.
+                    </p>
+                  </div>
+                  <p class="project-card__desc">
+                    Un juego de ajedrez que permite jugar con otros usuarios en
+                    local.
+                  </p>
+                  <a
+                    href="https://ajedrez-interactivo.vercel.app/"
+                    target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Un juego de ajedrez que permite jugar con otros usuarios en
-                local.
-              </p>
-              <a href="https://ajedrez-interactivo.vercel.app/" target="_blank"><button class="btn">Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
-      <a class="code-source" href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Avanzadas/08-Calculadora%20Cient%C3%ADfica" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/CalculadoraCientifica.png"
-                alt="Calculadora Científica"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Calculadora Científica</h5>
-                <p>Calculadora con funciones matemáticas avanzadas.</p>
+          </a>
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Avanzadas/08-Calculadora%20Cient%C3%ADfica"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/CalculadoraCientifica.png"
+                    alt="Calculadora Científica"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Calculadora Científica</h5>
+                    <p>Calculadora con funciones matemáticas avanzadas.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    Calculadora científica para resolver operaciones complejas.
+                  </p>
+                  <a
+                    href="https://calculadora-cientifica-deka.vercel.app/"
+                    target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Calculadora científica para resolver operaciones complejas.
-              </p>
-              <a href="https://calculadora-cientifica-deka.vercel.app/" target="_blank"><button class="btn">Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      <a class="code-source" href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Intermedio/12-Creador%20de%20Curr%C3%ADculum%20Vitae" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/GeneradorCV.png"
-                alt="Generador de CV"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Generador de CV</h5>
-                <p>Genera un currículum vitae en pocos clics.</p>
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Intermedio/12-Creador%20de%20Curr%C3%ADculum%20Vitae"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/GeneradorCV.png"
+                    alt="Generador de CV"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Generador de CV</h5>
+                    <p>Genera un currículum vitae en pocos clics.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    Aplicación web para generar y personalizar tu currículum de
+                    manera rápida.
+                  </p>
+                  <a
+                    href="https://generador-cv-automatico.vercel.app/"
+                    target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Aplicación web para generar y personalizar tu currículum de
-                manera rápida.
-              </p>
-              <a href="https://generador-cv-automatico.vercel.app/" target="_blank"><button class="btn" >Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      <a class="code-source" href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Avanzadas/09-Juego%20de%20Laberinto" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/Laberinto.png"
-                alt="Laberinto"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Laberinto</h5>
-                <p>Juego en el que debes resolver un laberinto en 2D.</p>
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Avanzadas/09-Juego%20de%20Laberinto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/Laberinto.png"
+                    alt="Laberinto"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Laberinto</h5>
+                    <p>Juego en el que debes resolver un laberinto en 2D.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    Juego interactivo que permite al usuario recorrer un
+                    laberinto en 2D.
+                  </p>
+                  <a href="https://laberintod.vercel.app/" target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Juego interactivo que permite al usuario recorrer un laberinto
-                en 2D.
-              </p>
-              <a href="https://laberintod.vercel.app/" target="_blank"><button class="btn" >Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      <a class="code-source" href="https://github.com/ErDekas/minimalist-portfolio-json" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/PortfolioMinimalista.png"
-                alt="Portfolio Minimalista"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Portfolio Minimalista</h5>
-                <p>Portfolio con diseño sencillo y elegante.</p>
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/minimalist-portfolio-json"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/PortfolioMinimalista.png"
+                    alt="Portfolio Minimalista"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Portfolio Minimalista</h5>
+                    <p>Portfolio con diseño sencillo y elegante.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    Un portfolio sencillo que destaca tus proyectos de manera
+                    clara.
+                  </p>
+                  <a
+                    href="https://deka-minimalist-cv.vercel.app/"
+                    target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Un portfolio sencillo que destaca tus proyectos de manera clara.
-              </p>
-              <a href="https://deka-minimalist-cv.vercel.app/" target="_blank"><button class="btn" >Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      <a class="code-source" href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Intermedio/19-Juego%20de%20Sudoku" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/Sudoku.png"
-                alt="Sudoku"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Sudoku</h5>
-                <p>Resuelve puzzles de Sudoku de manera interactiva.</p>
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Intermedio/19-Juego%20de%20Sudoku"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/Sudoku.png"
+                    alt="Sudoku"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Sudoku</h5>
+                    <p>Resuelve puzzles de Sudoku de manera interactiva.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    Juego en línea para resolver Sudoku, con diferentes niveles
+                    de dificultad.
+                  </p>
+                  <a href="https://sudoku-aleatorio.vercel.app/" target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Juego en línea para resolver Sudoku, con diferentes niveles de
-                dificultad.
-              </p>
-              <a href="https://sudoku-aleatorio.vercel.app/" target="_blank"><button class="btn" >Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      <a class="code-source" href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Avanzadas/01-Tetris" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/Tetris.png"
-                alt="Tetris"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Tetris</h5>
-                <p>Recreación del clásico juego de Tetris.</p>
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/100-Proyectos-JS/tree/main/Avanzadas/01-Tetris"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/Tetris.png"
+                    alt="Tetris"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Tetris</h5>
+                    <p>Recreación del clásico juego de Tetris.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    El popular juego de Tetris con controles mejorados y UI
+                    optimizada.
+                  </p>
+                  <a href="https://tetris-dk.vercel.app/" target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                El popular juego de Tetris con controles mejorados y UI
-                optimizada.
-              </p>
-              <a href="https://tetris-dk.vercel.app/" target="_blank"><button class="btn">Ver Proyecto</button></a>
             </div>
-          </div>
-        </div>
-      </a>
-      
-      <a class="code-source" href="https://github.com/ErDekas/Chat-React" target="_blank" rel="noopener noreferrer"> 
-        <div class="category">
-          <div class="category__projects">
-            <div class="project-card">
-              <img
-                src="assets/ChatReact.png"
-                alt="Chat React"
-                class="project-card__image"
-              />
-              <div class="project-card__info">
-                <h5>Chat React</h5>
-                <p>Chat en tiempo real con autenticación.</p>
+          </a>
+
+          <a
+            class="code-source"
+            href="https://github.com/ErDekas/Chat-React"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="category">
+              <div class="category__projects">
+                <div class="project-card">
+                  <img
+                    src="assets/ChatReact.png"
+                    alt="Chat React"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__info">
+                    <h5>Chat React</h5>
+                    <p>Chat en tiempo real con autenticación.</p>
+                  </div>
+                  <p class="project-card__desc">
+                    Aplicación en React con firebase de chat en tiempo real con
+                    autenticación
+                  </p>
+                  <a href="https://chat-react-fb.vercel.app/" target="_blank"
+                    ><button class="btn">Ver Proyecto</button></a
+                  >
+                </div>
               </div>
-              <p class="project-card__desc">
-                Aplicación en React con firebase de chat en tiempo real
-                con autenticación
-              </p>
-              <a href="https://chat-react-fb.vercel.app/" target="_blank"><button class="btn">Ver Proyecto</button></a>
             </div>
-          </div>
+          </a>
         </div>
-      </a>  
+      </section>
+    </div>
+
+    <!-- Sección de contacto -->
+    <section class="contact" id="contact">
+      <h5>¿Tienes un Proyecto?</h5>
+      <h2>¡Trabajemos Juntos!</h2>
+
+      <!-- Formulario de contacto -->
+      <form class="contact-form" novalidate>
+        <!-- Campo para el nombre -->
+        <div class="form-group">
+          <label for="name"
+            >Nombre completo <span class="required">*</span></label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="50"
+            pattern="[A-Za-zÀ-ÿ\s]{2,50}"
+            placeholder="Tu nombre completo"
+          />
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+
+        <!-- Campo para el correo electrónico -->
+        <div class="form-group">
+          <label for="email"
+            >Correo electrónico <span class="required">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="tu@email.com"
+          />
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+
+        <!-- Campo para el asunto -->
+        <div class="form-group">
+          <label for="subject">Asunto <span class="required">*</span></label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="5"
+            maxlength="100"
+            placeholder="Asunto de tu mensaje"
+          />
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+
+        <!-- Campo para el mensaje -->
+        <div class="form-group">
+          <label for="message">Mensaje <span class="required">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            minlength="20"
+            maxlength="500"
+            placeholder="Cuéntame sobre tu proyecto..."
+            rows="5"
+          ></textarea>
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+
+        <!-- Campo para el mensaje -->
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+
+      <div class="contact-info">
+        <p>
+          Correo:
+          <a href="mailto:pablotrabajos42@gmail.com"
+            >pablotrabajos42@gmail.com</a
+          >
+        </p>
+        <p>Github: <a href="https://github.com/ErDekas">ErDekas</a></p>
+        <p>
+          Instagram: <a href="https://www.instagram.com/tudekas">tudekas</a>
+        </p>
       </div>
     </section>
-  </div>
 
-  <section class="contact" id="contact">
-    <h5>¿Tienes un Proyecto?</h5>
-    <h2>¡Trabajemos Juntos!</h2>
-    
-    <form class="contact-form" novalidate>
-      <div class="form-group">
-        <label for="name">Nombre completo <span class="required">*</span></label>
-        <input 
-          type="text" 
-          id="name" 
-          name="name" 
-          required 
-          minlength="2"
-          maxlength="50"
-          pattern="[A-Za-zÀ-ÿ\s]{2,50}"
-          placeholder="Tu nombre completo"
-        >
-        <span class="error-message" aria-live="polite"></span>
-      </div>
-  
-      <div class="form-group">
-        <label for="email">Correo electrónico <span class="required">*</span></label>
-        <input 
-          type="email" 
-          id="email" 
-          name="email" 
-          required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          placeholder="tu@email.com"
-        >
-        <span class="error-message" aria-live="polite"></span>
-      </div>
-  
-      <div class="form-group">
-        <label for="subject">Asunto <span class="required">*</span></label>
-        <input 
-          type="text" 
-          id="subject" 
-          name="subject" 
-          required
-          minlength="5"
-          maxlength="100"
-          placeholder="Asunto de tu mensaje"
-        >
-        <span class="error-message" aria-live="polite"></span>
-      </div>
-  
-      <div class="form-group">
-        <label for="message">Mensaje <span class="required">*</span></label>
-        <textarea 
-          id="message" 
-          name="message" 
-          required
-          minlength="20"
-          maxlength="500"
-          placeholder="Cuéntame sobre tu proyecto..."
-          rows="5"
-        ></textarea>
-        <span class="error-message" aria-live="polite"></span>
-      </div>
-  
-      <button type="submit" class="btn">Enviar Mensaje</button>
-    </form>
-  
-    <div class="contact-info">
-      <p>
-        Correo: <a href="mailto:pablotrabajos42@gmail.com">pablotrabajos42@gmail.com</a>
-      </p>
-      <p>Github: <a href="https://github.com/ErDekas">ErDekas</a></p>
-      <p>Instagram: <a href="https://www.instagram.com/tudekas">tudekas</a></p>
-    </div>
-  </section>
-
+    <!-- Pie de página -->
     <footer class="footer">
       <div class="footer__brand">
         <a href="#">Pablo Linares</a>
